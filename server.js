@@ -3,6 +3,10 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 const compression = require("compression");
 
+let uri = 'mongodb://user:pass@host:port/dbname';
+
+mongoose.connect(uri);
+
 const PORT = 3005;
 
 const app = express();
