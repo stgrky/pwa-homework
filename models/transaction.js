@@ -1,5 +1,9 @@
 const mongoose = require("mongoose");
 
+let uri = 'mongodb://user:pass@host:port/dbname';
+
+mongoose.connect(uri);
+
 const Schema = mongoose.Schema;
 
 const transactionSchema = new Schema(
